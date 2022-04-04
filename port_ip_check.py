@@ -57,7 +57,7 @@ def if_check():
         return False
 
 def port_chk():
-    call('clear')
+    
     while True:
 
         capture = pyshark.LiveCapture(interface="eth0")
@@ -236,4 +236,5 @@ def port_chk():
             print(" ")
 
 
+call('clear')
 port_chk()
