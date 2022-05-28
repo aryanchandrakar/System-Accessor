@@ -78,7 +78,7 @@ def port_chk():
                 dst_port = packet[protocol].dstport  # destination port
                 if int(src_port) in vulnerable_port or int(dst_port) in vulnerable_port:
 
-                    # Mail port exploited
+                    # Mail port exploited        ---------------------        ---------------------        ---------------------        ---------------------          
                     if (int(src_port) or int(dst_port)) == (587 or 25 or 110 or 143):
                         # chk=input(Fore.YELLOW+"[!] Did you send of receive any email around "+localtime+"?[Y/N]"+Style.RESET_ALL)
                         if if_check():
@@ -98,7 +98,7 @@ def port_chk():
                         else:
                             print(Fore.GREEN+"[+] SMTP mail check"+Style.RESET_ALL)
 
-                    # SSH exploited
+                    # SSH exploited        ---------------------        ---------------------        ---------------------        ---------------------      
                     if (int(src_port) or int(dst_port)) == 22:
                         # chk=input(Fore.YELLOW+"[!] Did you accessed secure shell around "+localtime+"?[Y/N]"+Style.RESET_ALL)
                         if if_check():
@@ -116,7 +116,7 @@ def port_chk():
                         else:
                             print(Fore.GREEN+"[+] SSH check"+Style.RESET_ALL)
 
-                    # FTP
+                    # FTP        ---------------------        ---------------------        ---------------------        ---------------------      
                     if (int(src_port) or int(dst_port)) == (20 or 21):
                         chk=input(Fore.YELLOW+"[!] Did you transfer any files to server around "+localtime+"?[Y/N]"+Style.RESET_ALL)
                         if if_check():
@@ -136,7 +136,7 @@ def port_chk():
                         else:
                             print(Fore.GREEN+"[+] FTP check"+Style.RESET_ALL)
 
-                    # TFTP
+                    # TFTP        ---------------------        ---------------------        ---------------------        ---------------------      
                     if (int(src_port) or int(dst_port)) == 69:
                         print(Style.BRIGHT + Back.RED + Fore.BLACK + "------------------------------------------------------------------------" + Style.RESET_ALL)
                         print(Style.BRIGHT+Fore.RED+"[*] ALERT! SYSTEM MIGHT BE COMPROMISED!!\n[+]Using vulnerable server file transfer port.\n"+Style.RESET_ALL
@@ -149,7 +149,7 @@ def port_chk():
 
                         time.sleep(2)
 
-                    # Windows terminal server or Lightweight Directory Access exploited
+                    # Windows terminal server or Lightweight Directory Access exploited        ---------------------        ---------------------        ---------------------        ---------------------      
                     if (int(src_port) or int(dst_port)) == (3389 or 389):
                         chk=input(Fore.YELLOW+"[!] Did you transfer control of system/files over network around "+localtime+"?[Y/N]"+Style.RESET_ALL)
                         if if_check():
@@ -168,7 +168,7 @@ def port_chk():
                         else:
                             print(Fore.GREEN+"[+] LDAP check"+Style.RESET_ALL)
 
-                    # Simple Network management Protocol exploit
+                    # Simple Network management Protocol exploit        ---------------------        ---------------------        ---------------------        ---------------------      
                     if (int(src_port) or int(dst_port)) == (20 or 21):
                         chk=input(Fore.YELLOW+"[!] Did you modify network settings around "+localtime+"?[Y/N]"+Style.RESET_ALL)
                         if if_check():
@@ -187,7 +187,7 @@ def port_chk():
                         else:
                             print(Fore.GREEN+"[+] SNMP check"+Style.RESET_ALL)
 
-                    # telnet
+                    # telnet        ---------------------        ---------------------        ---------------------        ---------------------      
                     if (int(src_port) or int(dst_port)) == 23:
                         chk=input(Fore.YELLOW+"[!] Did you contacted any service around "+localtime+"?[Y/N]"+Style.RESET_ALL)
                         if if_check():
@@ -206,7 +206,7 @@ def port_chk():
                         else:
                             print(Fore.GREEN+"[+] Telnet check"+Style.RESET_ALL)
 
-                    # relay chat exploit
+                    # relay chat exploit        ---------------------        ---------------------        ---------------------        ---------------------      
                     if (int(src_port) or int(dst_port)) == 194:
                         chk=input(Fore.YELLOW+"[!] Did you send/receive any message to/from other computer's application around "+localtime+"?[Y/N]"+Style.RESET_ALL)
                         if if_check():
