@@ -38,7 +38,7 @@ Required libraries-
 
 ### Running the accessor
 1. Open up 3 different terminals and two additional either on the same device or another.
-2. Run the netowrk monitor ([network_arpspoof_check.py](network_arpspoof_check.py), [port_ip_check.py](port_ip_check.py)), Process Monitor ([process_monitor_check.py](process_monitor_check.py)) scripts on each of the 3 terminals, using `python3 file_name.py`.
+2. Run the netowrk monitor ([network_arpspoof_check.py](network_arpspoof_check.py), [port_ip_check.py](port_ip_check.py)), Process Monitor ([process_monitor_check.py](process_monitor_check.py)) scripts on each of the 3 terminals, using `python3 file_name.py`. Change the interface of the network monitors as per need.
 3. Several processes would have started on the port_ip_check and process_monitor_check terminal.
 4. On the other 2 terminals run the [keylogger](keylogger.py) and [ARP Spoof](arp_spoof.py) attack, using `python3 file_name.py`. You must add the attacker's email and password in the keylogger file to receive email about the same.
 5. Once the attack has started the system accessor terminals would alert the user in red seperate from the usual data to have their attemtion.
