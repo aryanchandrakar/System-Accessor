@@ -31,7 +31,7 @@ def restore(dest_ip, source_ip):
 
 tgt_ip =input("[+] enter the target ip address : ")
 # gtway_ip ="192.168.1.1"
-gtway_ip ="10.0.2.1"
+gtway_ip =input("[+] enter the gateway ip address : ")
 
 pkt_count=0
 try:
