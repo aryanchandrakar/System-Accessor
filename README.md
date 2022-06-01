@@ -1,4 +1,8 @@
 # System-Accessor
+
+_(by - Aryan Chandrakar **18BCI0174**)_
+
+
 The Accessor is divided into two components each executing different sets of function in order to determine whether the system has been compromised or under one at the moment. Unlike the usual antiviruses offered from several companies checking for flags in the files or running the file for a short period in a sandbox, which can easily be bypassed by using redundant code, hiding the files, making the file polymorphic etc. Thus, to add to the current methods of accessing the system, the structure has been developed in two components namely Network Accessor and Process Monitor which works to check the system’s symptoms in order to provide better results.
 <img src="extra/System_accessor.jpg" width=70%> <img src="extra/System_accessor_2.jpg" width=70%>
 
