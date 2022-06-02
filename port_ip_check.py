@@ -52,6 +52,7 @@ def if_check():
             ("Content" not in (psutil.Process(process).name for process in psutil.pids()[:])) or \
             ("Extensions" not in (psutil.Process(process).name for process in psutil.pids()[:])):
             # add conditions as per need
+        # Can hardcode condition using socket library to fetch process_name but it gives more false positive
         return True
     else:
         return False
