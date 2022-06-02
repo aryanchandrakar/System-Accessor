@@ -23,8 +23,8 @@ def process_sniffed_packet(packet):
     if packet.haslayer(scapy.ARP) and packet[scapy.ARP].op==2:
         # check for arp layer and is it of type "is at", relation between mac and ip
         try:
-            real_mac=get_mac(packet[scapy.ARP].psrc)
-            response_mac=packet[scapy.ARP].hwsrc
+            real_mac=get_mac(packet[scapy.ARP].psrc) # fetch MAC from IP(psrc)
+            response_mac=packet[scapy.ARP].hwsrc # hwsrc - fetch Mac corresponding to psrc
             if real_mac != response_mac:
                 print(Fore.RED+"[~] You are under attack! Check your network")
                 sys.exit(Fore.GREEN+"Get to Safety!")
