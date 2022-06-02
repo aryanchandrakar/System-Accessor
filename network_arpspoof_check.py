@@ -10,6 +10,7 @@ def get_mac(ip):
     arp_request=scapy.ARP(pdst=ip)
     # the mac of the address we arp request ff:ff:ff....
     broadcast= scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
+    # discover hosts on a network
     arp_request_broadcast= broadcast/arp_request
     # to get the field that can be edited
     answerlist=scapy.srp(arp_request_broadcast, timeout=1, verbose=False)[0]
